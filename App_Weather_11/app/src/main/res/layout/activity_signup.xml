@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_login"
+    android:orientation="vertical"
+    tools:context=".Signup_Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="200dp"
+            android:background="@drawable/img"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:padding="20dp"
+            android:alpha="0.8">
+
+
+            <EditText
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:id="@+id/signup_email"
+                android:background="@drawable/boder_text"
+                android:layout_marginTop="30dp"
+                android:padding="8dp"
+                android:hint="Email"
+                android:drawableLeft="@drawable/ic_baseline_email_24"
+                android:drawablePadding="8dp" />
+
+            <EditText
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:id="@+id/signup_password"
+                android:background="@drawable/boder_text"
+                android:layout_marginTop="20dp"
+                android:padding="8dp"
+                android:hint="Mật khẩu"
+                android:inputType="textPassword"
+                android:drawableLeft="@drawable/ic_baseline_password_24"
+                android:drawablePadding="8dp" />
+
+            <EditText
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:id="@+id/signup_confirm"
+                android:background="@drawable/boder_text"
+                android:layout_marginTop="20dp"
+                android:padding="8dp"
+                android:hint="Xác nhận mật khẩu"
+                android:inputType="textPassword"
+                android:drawableLeft="@drawable/ic_baseline_password_24"
+                android:drawablePadding="8dp" />
+            
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:text="Đăng kí"
+                android:id="@+id/signup_button"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/buttonshape"
+                />
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/loginRedirectText"
+                android:text="Bạn đã có tài khoản? Đăng nhập"
+                android:layout_gravity="center"
+                android:padding="8dp"
+                android:textSize="18sp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/white"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
